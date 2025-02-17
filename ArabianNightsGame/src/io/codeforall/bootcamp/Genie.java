@@ -1,21 +1,21 @@
 package io.codeforall.bootcamp;
 
-public class Genie {
-    public int numberOfWishes;
+public abstract class Genie {
+    private int numberOfWishes;
 
-    public String name;
+    private String name;
 
-    public Genie(int numberOfWishes){
+    public Genie(int numberOfWishes) {
         this.numberOfWishes = numberOfWishes;
         this.name = randomName();
 
     }
 
-    public String randomName(){
+    private String randomName() {
         int random = (int) Math.floor(Math.random() * 5) + 1;
         String name = "";
 
-        switch (random){
+        switch (random) {
             case 1:
                 name = "Zafirah";
                 break;
@@ -37,7 +37,7 @@ public class Genie {
 
         random = (int) Math.floor(Math.random() * 5) + 1;
 
-        switch (random){
+        switch (random) {
             case 1:
                 name += "Al-Fayez";
                 break;
@@ -58,10 +58,14 @@ public class Genie {
         return name;
     }
 
-    public void grantAWish(String wish){
+    public String getName() {
+        return name;
+    }
+
+    public void grantAWish(String wish) {
         if (numberOfWishes > 0) {
             numberOfWishes--;
-            System.out.println("Your wish - " + wish + " - has been granted by the great " + name + ".");
+            System.out.println("Your wish - " + wish + " - has been granted by " + name + ".");
             System.out.println("You have " + numberOfWishes + " wishes left.");
             return;
         }

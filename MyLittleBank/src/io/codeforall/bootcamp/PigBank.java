@@ -7,7 +7,7 @@ public class PigBank {
     private double valueInAccount;
 
     public PigBank(double firstValue, int password) {
-       validationToCreateAccount(firstValue, password);
+        validationToCreateAccount(firstValue, password);
     }
 
     public void validationToCreateAccount(double firstValue, int password) {

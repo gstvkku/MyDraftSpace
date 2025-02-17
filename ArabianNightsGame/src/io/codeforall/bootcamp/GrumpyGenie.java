@@ -2,18 +2,19 @@ package io.codeforall.bootcamp;
 
 public class GrumpyGenie extends Genie {
     private boolean hasMadeAWish = false;
-    public GrumpyGenie(int numberOfWishes){
+
+    public GrumpyGenie(int numberOfWishes) {
         super(numberOfWishes);
-        System.out.println(name + ", the grumpy genie appeared");
+        System.out.println(getName() + ", the grumpy genie, appeared.");
     }
 
     @Override
     public void grantAWish(String wish) {
-        if (!hasMadeAWish){
+        if (!hasMadeAWish) {
             super.grantAWish(wish);
             hasMadeAWish = true;
             return;
         }
-        System.out.println(name + ", the grumpy genie, doesn't want to grant you any more wishes.");
+        System.out.println(getName() + ", the grumpy genie, doesn't want to grant you any more wishes.");
     }
 }

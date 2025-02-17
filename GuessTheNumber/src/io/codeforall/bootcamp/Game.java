@@ -1,7 +1,7 @@
 package io.codeforall.bootcamp;
 
 public class Game {
-    public int gameNumber;
+    private int gameNumber;
     public Player player;
 
 
@@ -13,15 +13,17 @@ public class Game {
         this.gameNumber = Generator.generateNumber();
     }
 
-    public void play() {
+     public void play() {
+        System.out.println("Let's start the game!");
         System.out.println("Generating the game number...");
         defineGameNumber();
         player.definePlayerNumber();
         for (int rounds = 0; rounds < 5; rounds++) {
-            if (player.getNumber() != gameNumber) {
-                System.out.println("Wrong number - " + player.getNumber() + " :( Try again!");
-            } else if (player.getNumber() == gameNumber) {
-                System.out.println("Congratulations! You guessed the number - " + player.getNumber());
+            if (player.getPlayerNumber() != gameNumber) {
+                System.out.println("Wrong number - " + player.getPlayerNumber() + " :( Try again!");
+            }
+            else if (player.getPlayerNumber() == gameNumber) {
+                System.out.println("You guessed the number - " + player.getPlayerNumber() + " :) Congratulations!");
                 break;
             }
             if (rounds == 4) {

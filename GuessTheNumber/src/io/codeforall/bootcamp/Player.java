@@ -3,7 +3,7 @@ package io.codeforall.bootcamp;
 public class Player {
     public String playerName;
 
-    private int number;
+    private int playerNumber;
 
     public Player(String name) {
         this.playerName = name;
@@ -11,8 +11,8 @@ public class Player {
     }
 
     public void definePlayerNumber() {
-        this.number = Generator.generateNumber();
+        this.playerNumber = Generator.generateNumber();
     }
 
-    public int getNumber() {return this.number;}
+    public int getPlayerNumber() {return this.playerNumber;}
 }
