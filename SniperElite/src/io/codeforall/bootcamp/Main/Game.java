@@ -3,8 +3,8 @@ package io.codeforall.bootcamp.Main;
 import io.codeforall.bootcamp.GameObjects.*;
 
 public class Game {
-    private int numberOfGameObjects;
-    private GameObject[] gameObjects;
+    private final int numberOfGameObjects;
+    private final GameObject[] gameObjects;
     SniperRifle sniperRifle;
 
     private int shotsFired;
