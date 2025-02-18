@@ -4,7 +4,7 @@ import io.codeforall.bootcamp.field.Position;
 
 public class CarFactory {
     private static int counter = 0;
-    private static int maxNumOfAmbulances = 3;
+    private static int maxNumOfAmbulances = 2;
 
     public static Car getNewCar() {
         if (maxNumOfAmbulances > 0) {

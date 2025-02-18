@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Closest_Neighbours/Closest_Neighbours.iml" filepath="$PROJECT_DIR$/Closest_Neighbours/Closest_Neighbours.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuessTheNumber/GuessTheNumber.iml" filepath="$PROJECT_DIR$/GuessTheNumber/GuessTheNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/My-Projects.iml" filepath="$PROJECT_DIR$/.idea/My-Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_CreatingClass/OOP_CreatingClass.iml" filepath="$PROJECT_DIR$/OOP_CreatingClass/OOP_CreatingClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaperRockScissors/PaperRockScissors.iml" filepath="$PROJECT_DIR$/PaperRockScissors/PaperRockScissors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-crash/car-crash.iml" filepath="$PROJECT_DIR$/car-crash/car-crash.iml" />
+    </modules>
+  </component>
+</project>
