@@ -16,8 +16,6 @@ public class Playground {
         me.takeMoneyFromBank(40, 223);
         me.spendMoney(30);
         me.spendMoney(0.0);
-
-
         // Each person has its own wallet
         // each person can retrieve money from the bank into the WALLET (new type), and the opposite
         // each person can only spend from their own wallet

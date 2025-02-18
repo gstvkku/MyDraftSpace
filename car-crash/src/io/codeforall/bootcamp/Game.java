@@ -102,7 +102,7 @@ public class Game {
             return;
         }
         switch (car.getDir()) {
-            case Directions.UP:
+            case UP:
                 if (car.getPos().getRow() == 0) {
                     car.setDir(Directions.DOWN);
                     break;
@@ -112,7 +112,7 @@ public class Game {
                 crashVerify(car);
                 break;
 
-            case Directions.DOWN:
+            case DOWN:
                 if (car.getPos().getRow() == rows - 1) {
                     car.setDir(Directions.UP);
                     break;
@@ -122,7 +122,7 @@ public class Game {
                 crashVerify(car);
                 break;
 
-            case Directions.RIGHT:
+            case RIGHT:
                 if (car.getPos().getCol() == cols - 1) {
                     car.setDir(Directions.LEFT);
                     break;
@@ -132,7 +132,7 @@ public class Game {
                 crashVerify(car);
                 break;
 
-            case Directions.LEFT:
+            case LEFT:
                 if (car.getPos().getCol() == 0) {
                     car.setDir(Directions.RIGHT);
                     break;

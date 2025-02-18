@@ -26,8 +26,7 @@ public class Person {
     public void putMoneyToBank(double value, int password) {
         if (value <= personalWallet.getMoney()) {
             personalWallet.reduceMoney(personalAccount.verifyToPutMoney(value, password));
-        }
-        else {
+        } else {
             System.out.println("You don't have enough money to put this value in your account :(");
         }
     }
@@ -43,6 +42,7 @@ public class Person {
     public void seeAccountInformation(int password) {
         personalAccount.showInformation();
     }
+
     public void openWallet() {
         System.out.println("You have $" + personalWallet.getMoney() + " on your wallet!");
     }
