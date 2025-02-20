@@ -32,11 +32,11 @@ public class FileManager {
                 continue;
             }
             if (fileName.equals(file.getFileName())) {
-                System.out.println("File founded.");
+                System.out.println("File found.");
                 return file;
             }
         }
-        throw new FileNotFoundException("File not founded.");
+        throw new FileNotFoundException("File not found.");
     }
 
     public void createFile(String name) throws FileException {
