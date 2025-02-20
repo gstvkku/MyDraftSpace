@@ -73,24 +73,28 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
     public void moveInDirection(GridDirection direction, int distance) {
         switch (direction) {
             case UP:
-                this.setPos(getCol(), getRow() - distance);
+                moveUp(distance);
                 hide();
-                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()), this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
+                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()),
+                        this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
                 break;
             case DOWN:
-                this.setPos(getCol(), getRow() + distance);
+                moveDown(distance);
                 hide();
-                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()), this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
+                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()),
+                        this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
                 break;
             case LEFT:
-                this.setPos(getCol() - distance, getRow());
+                moveLeft(distance);
                 hide();
-                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()), this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
+                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()),
+                        this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
                 break;
             case RIGHT:
-                this.setPos(getCol() + distance, getRow());
+                moveRight(distance);
                 hide();
-                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()), this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
+                this.rectangle = new Rectangle(this.simpleGfxGrid.columnToX(getCol()), this.simpleGfxGrid.rowToY(getRow()),
+                        this.simpleGfxGrid.getCellSize(), this.simpleGfxGrid.getCellSize());
                 break;
         }
         show();
