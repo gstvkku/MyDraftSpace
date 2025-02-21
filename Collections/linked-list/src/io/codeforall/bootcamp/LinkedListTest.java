@@ -1,6 +1,7 @@
 package io.codeforall.bootcamp;
 
 public class LinkedListTest {
+
     public static void main(String[] args) {
 
         LinkedListTest test = new LinkedListTest();
@@ -301,4 +302,5 @@ public class LinkedListTest {
         System.out.println(test + ": " + (result ? "OK" : "FAIL"));
 
     }
+
 }

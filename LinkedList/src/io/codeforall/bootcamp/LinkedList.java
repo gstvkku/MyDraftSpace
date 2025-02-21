@@ -40,7 +40,6 @@ public class LinkedList {
         index++;
         Node iterator = head;
         if (iterator.getNext() != null && index >= 0 && index <= this.length) {
-
             for (int i = 0; i < index; i++) {
                 iterator = iterator.getNext();
             }
@@ -59,13 +58,11 @@ public class LinkedList {
         Node iterator = head;
         if (this.length != 0) {
             iterator = iterator.getNext();
-            for (int i = 0; i < this.length + 1; i++) {
+            for (int i = 0; i < this.length; i++) {
                 if (iterator.data.equals(data)) {
                     return i;
                 }
-                if (i != this.length - 1) {
-                    iterator = iterator.getNext();
-                }
+                iterator = iterator.getNext();
             }
         }
         return -1;
@@ -105,6 +102,17 @@ public class LinkedList {
             }
         }
         return false;
+    }
+    public void replace (int indexToNewData, Object newData) {
+        indexToNewData++;
+        Node iterator = head;
+        if (iterator.getNext() != null && indexToNewData >= 0 && indexToNewData <= this.length) {
+            for (int i = 0; i < indexToNewData; i++) {
+                iterator = iterator.getNext();
+            }
+            iterator.setData(newData);
+        }
+        System.out.println("You can't do this:");
     }
 
     private class Node {
