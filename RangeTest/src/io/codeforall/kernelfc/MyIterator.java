@@ -8,7 +8,7 @@ public class MyIterator<E> implements Iterator {
 
     public MyIterator(Range range) {
         this.range = range;
-        currentElement = range.getMin() - 1;
+        currentElement = range.getMin();
     }
 
     public void set(int e) {
@@ -21,26 +21,23 @@ public class MyIterator<E> implements Iterator {
 
     @Override
     public boolean hasNext() {
-        while (currentElement != range.getMax()) {
-            return true;
-        }
-        return false;
+        return currentElement <= range.getMax();
     }
 
     @Override
     public Object next() {
         Integer[] removedElements = range.getRemovedElements();
         for (Integer removedElement : removedElements) {
-            if ((currentElement + 1) == removedElement) {
+            if (removedElement.equals(currentElement + 1)) {
                 currentElement++;
             }
         }
         return currentElement++;
     }
 
-    @Override
+   /* @Override
     public void remove() {
         range.setRemovedElements(currentElement);
         currentElement++;
-    }
+    }*/
 }
