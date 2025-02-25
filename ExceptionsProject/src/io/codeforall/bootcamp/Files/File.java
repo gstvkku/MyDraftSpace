@@ -5,7 +5,6 @@ public class File {
     public File(String name) {
         this.fileName = name;
     }
-
     public String getFileName() {
         return fileName;
     }
