@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
@@ -131,17 +132,21 @@ public class Server {
     }
 
     public void informDisconnection(String clientName) {
+
         for (ClientHandler clientHandler : clientHandlers) {
             clientHandler.writeMessage(clientName + " disconnected from chat :(");
         }
+
     }
 
     public void informConnection(String clientName) {
 
         for (ClientHandler clientHandler : clientHandlers) {
+
             if (!clientHandler.getClientName().equals(clientName)) {
                 clientHandler.writeMessage(clientName + " connected to the chat!");
             }
+
         }
 
     }
