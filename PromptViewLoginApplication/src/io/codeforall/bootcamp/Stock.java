@@ -1,6 +1,8 @@
 package io.codeforall.bootcamp;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 public class Stock {
 
@@ -56,15 +58,48 @@ public class Stock {
 
     }
 
-    public HashMap getHamburguers() {
-        return hamburguers;
+    public String[] getHamburguers() {
+
+        String[] options = new String[hamburguers.size()];
+        ArrayList<String> burguers = new ArrayList<>(hamburguers.keySet());
+
+        for (int i = 0; i < hamburguers.size(); i++) {
+
+            options[i] = burguers.get(i) + " $" + hamburguers.get(burguers.get(i)).toString();
+
+        }
+
+        return options;
+
     }
 
-    public HashMap getBeverages() {
-        return beverages;
+    public String[] getBeverages() {
+
+        String[] options = new String[beverages.size()];
+        ArrayList<String> beves = new ArrayList<>(beverages.keySet());
+
+        for (int i = 0; i < beverages.size(); i++) {
+
+            options[i] = beves.get(i) + " $" + beverages.get(beves.get(i)).toString();
+
+        }
+
+        return options;
+
     }
 
-    public HashMap getDeserts() {
-        return deserts;
+    public String[] getDeserts() {
+
+        String[] options = new String[deserts.size()];
+        ArrayList<String> deser = new ArrayList<>(deserts.keySet());
+
+        for (int i = 0; i < deserts.size(); i++) {
+
+            options[i] = deser.get(i) + " $" + deserts.get(deser.get(i)).toString();
+
+        }
+
+        return options;
+
     }
 }
