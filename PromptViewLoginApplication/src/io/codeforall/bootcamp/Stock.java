@@ -12,7 +12,7 @@ public class Stock {
 
     public Stock() {
 
-        this.hamburguers = new HashMap<>();
+        this.hamburguers = new HashMap();
         this.beverages = new HashMap();
         this.deserts = new HashMap();
 
@@ -22,21 +22,21 @@ public class Stock {
 
     public void initStock() {
 
-        hamburguers.put("Cluck Norris", 5);
-        hamburguers.put("The Chickenator", 6);
-        hamburguers.put("Fowl Play", 6);
-        hamburguers.put("Cluck'n'Roll", 8);
-        hamburguers.put("The Chick Magnet", 10);
+        hamburguers.put("Cluck Norris", 5.0);
+        hamburguers.put("The Chickenator", 6.0);
+        hamburguers.put("Fowl Play", 6.0);
+        hamburguers.put("Cluck'n'Roll", 8.0);
+        hamburguers.put("The Chick Magnet", 10.0);
 
-        beverages.put("Watter Bottle", 1);
-        beverages.put("Coke", 2);
-        beverages.put("Diet Coke", 2);
-        beverages.put("Seven Up", 2);
-        beverages.put("Monster Energy", 3);
+        beverages.put("Watter Bottle", 1.0);
+        beverages.put("Coke", 2.0);
+        beverages.put("Diet Coke", 2.0);
+        beverages.put("Seven Up", 2.0);
+        beverages.put("Monster Energy", 3.0);
 
-        deserts.put("Chocolate cookie", 4);
-        deserts.put("Vanilla Ice Cream", 3);
-        deserts.put("Mini Apple Pie", 5);
+        deserts.put("Chocolate cookie", 4.0);
+        deserts.put("Vanilla Ice Cream", 3.0);
+        deserts.put("Mini Apple Pie", 5.0);
 
     }
 
