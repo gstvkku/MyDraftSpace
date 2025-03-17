@@ -281,8 +281,6 @@ public class SelfOrderKiosk {
         Double beverageValue = 0.0;
         Double desertValue = 0.0;
 
-        System.out.println("--------------------------------------------" + "\n");
-
         if (order.getSelectedBurguer() != null) {
             System.out.println("- " + order.getSelectedBurguer());
             hamburguerValue = Double.parseDouble(order.getSelectedBurguer().replaceAll("[^\\d.]", ""));
