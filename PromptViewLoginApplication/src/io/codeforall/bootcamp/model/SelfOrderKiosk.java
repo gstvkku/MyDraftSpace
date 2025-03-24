@@ -1,7 +1,6 @@
-package io.codeforall.bootcamp;
+package io.codeforall.bootcamp.model;
 
 import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.scanners.integer.IntegerInputScanner;
 import org.academiadecodigo.bootcamp.scanners.integer.IntegerRangeInputScanner;
 import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 import org.academiadecodigo.bootcamp.scanners.precisiondouble.DoubleInputScanner;
@@ -18,14 +17,49 @@ public class SelfOrderKiosk {
     private String systemPassword;
     private ArrayList<Order> lastOrders;
 
-    public SelfOrderKiosk(String systemPassword) {
-
-        this.kfcStock = new Stock();
-        this.prompt = new Prompt(System.in, System.out);
+    public SelfOrderKiosk() {
         this.currentClient = null;
-        this.lastOrders = new ArrayList<>();
-        this.systemPassword = systemPassword;
+        this.systemPassword = "123";
+    }
 
+    public Stock getKfcStock() {
+        return kfcStock;
+    }
+
+    public void setKfcStock(Stock kfcStock) {
+        this.kfcStock = kfcStock;
+    }
+
+    public Prompt getPrompt() {
+        return prompt;
+    }
+
+    public void setPrompt(Prompt prompt) {
+        this.prompt = prompt;
+    }
+
+    public String getCurrentClient() {
+        return currentClient;
+    }
+
+    public void setCurrentClient(String currentClient) {
+        this.currentClient = currentClient;
+    }
+
+    public String getSystemPassword() {
+        return systemPassword;
+    }
+
+    public void setSystemPassword(String systemPassword) {
+        this.systemPassword = systemPassword;
+    }
+
+    public ArrayList<Order> getLastOrders() {
+        return lastOrders;
+    }
+
+    public void setLastOrders(ArrayList<Order> lastOrders) {
+        this.lastOrders = lastOrders;
     }
 
     public void work() {
