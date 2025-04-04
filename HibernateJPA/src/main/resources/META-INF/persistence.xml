@@ -18,4 +18,24 @@
         </properties>
 
     </persistence-unit>
+
+    <persistence-unit name="inheritance1" transaction-type="RESOURCE_LOCAL">
+        <!-- provider element declares the class that provides the initial factory
+            for creating an EntityManager instance -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="hiberate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/single_table"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+
+    </persistence-unit>
+
 </persistence>
