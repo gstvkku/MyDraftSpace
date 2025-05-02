@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+button {
+    padding: 5px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#edit-button {
+    background-color: rgb(72, 154, 212);
+}
+
+#delete-button, #reset-button {
+    background-color: rgb(175, 54, 54);
+}
+
+#update-button {
+    background-color: rgb(236, 180, 26);
+}
+
+#add-button {
+    background-color: rgb(32, 161, 75);
+}
+
+.interface {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.customers-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(139, 205, 233);
+    border-radius: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px;
+}

@@ -91,7 +91,7 @@ console.log("Testing list:");
 console.log(myService.list());
 
 console.log("\n");
-console.log("Testing name function:");
+console.log("Testing remove function:");
 myService.remove("Wafelda");
 console.log(myService.list());
 
