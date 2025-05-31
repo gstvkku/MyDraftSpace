@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: rgb(243, 222, 194);
+}
+
+img.food {
+  width: 18vw;
+}
+
+section {
+  height: 100vh;
+}
+
+header {
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(243, 222, 194, 0.848);
+  border-bottom: 2px solid rgb(160, 127, 66);
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(160, 127, 66);
+  font-size: 2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5vw;
+  background-color: rgb(160, 127, 66);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(243, 222, 194);
+  font-weight: 600;
+}
+
+section#intro {
+  background-image: url(./assets/paris1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+section#intro div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(243, 222, 194, 0.8);
+  border: 2px solid rgb(160, 127, 66);
+  padding: 6%;
+  border-radius: 30px;
+}
+
+section#intro h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+section#intro p {
+  font-size: 25px;
+  color: black;
+}
+
+section#why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 12%;
+  margin-bottom: 5vh;
+}
+
+section#why h2 {
+  font-size: 40px;
+  color: rgb(160, 127, 66);
+}
+
+section#why div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+  background-color: rgb(160, 127, 66);
+  border-radius: 30px;
+}
+
+section#why p {
+  color: rgb(243, 222, 194);
+  font-size: 18px;
+  text-align: center;
+}
+
+section#attractions {
+  background-image: url(./assets/paris2.png);
+  background-size: cover;
+  background-position: center;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+section#attractions h2 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+section#attractions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3% 10%;
+  background-color: rgba(243, 222, 194, 0.8);
+  border: 2px solid rgb(160, 127, 66);
+  border-radius: 30px;
+}
+
+section#attractions ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+section#attractions a {
+  color: rgb(160, 127, 66);
+  font-size: 18px;
+}
+
+section#foods {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section#foods h2 {
+  font-size: 40px;
+  color: rgb(160, 127, 66);
+}
+
+section#foods h3,
+p {
+  color: rgb(243, 222, 194);
+  text-align: center;
+}
+
+section#foods div.foods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 3% 5%;
+}
+
+section#foods div.food-box {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2%;
+  background-color: rgb(160, 127, 66);
+  border-radius: 30px;
+}
+
+section#foods div.food-box p {
+  font-size: 15px;
+}
+
+footer {
+}
+
+footer p {
+  color: rgb(160, 127, 66);
+  padding: 3vh;
+}
