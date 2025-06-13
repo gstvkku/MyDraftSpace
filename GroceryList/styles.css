@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+main {
+  height: 100vh;
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.385);
+}
+
+@media only screen and (max-width: 768px) {
+  main form {
+    flex-wrap: wrap;
+  }
+}
+
+main form input {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+main form button {
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #6ea8e3;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+main form button:hover {
+  background-color:  rgb(185, 115, 228);
+}
+
+main ul {
+  width: 40vw;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+  max-height: 50vh;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.385);
+}
+main ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+main ul li input {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+main ul li input[type="checkbox"]:checked {
+  accent-color: rgb(191, 109, 241);
+}

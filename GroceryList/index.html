@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Grocery List</h1>
+      <form id="form">
+        <input
+          type="text"
+          name="product-name"
+          id="product-name"
+          placeholder="Product"
+        />
+        <input type="number" name="amount" id="amount" placeholder="Amount" />
+        <button type="submit" id="form-button">Add to list</button>
+      </form>
+      <ul id="list">
+        <li>
+          <span id="product-amount">2 x Hamburguer</span>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+        </li>
+      </ul>
+    </main>
+  </body>
+  <script src="./scripts.js"></script>
+</html>
