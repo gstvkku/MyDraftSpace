@@ -13,10 +13,18 @@ form.addEventListener("submit", (event) => {
   }
 
   let li = document.createElement("li");
+  li.classList.add("listElement");
+
   let span = document.createElement("span");
   span.textContent = `${amount} x ${product}`;
+
   let checkBox = document.createElement("input");
   checkBox.type = "checkbox";
+  checkBox.addEventListener("click", () =>
+    li.classList.contains("checked")
+      ? li.classList.remove("checked")
+      : li.classList.add("checked")
+  );
 
   li.appendChild(span);
   li.appendChild(checkBox);
@@ -30,3 +38,4 @@ function verifyInputValidity(product, amount) {
   let validity = product === "" || amount <= 0 ? false : true;
   return validity;
 }
+

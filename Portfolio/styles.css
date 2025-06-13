@@ -11,7 +11,7 @@
 
 :root {
   --bg-color: black;
-  --second-bg-color: rgb(11, 11, 11);
+  --second-bg-color: rgb(18, 18, 18);
   --text-color: #fff;
   --main-color: rgb(171, 69, 244);
 }
@@ -174,6 +174,7 @@ span {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -192,4 +193,83 @@ span {
 .about-content p {
   font-size: 1.8rem;
   margin: 2rem 0 2rem;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.technologies-container .heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.tech-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  padding: 3rem 8rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  border-radius: 30px;
+  animation: backgroundGradient 5s infinite alternate;
+  background: linear-gradient(
+    -45deg,
+    #3b058c,
+    rgb(157, 9, 174),
+    #3b058c,
+    rgb(171, 6, 189)
+  );
+  background-size: 400% 400%;
+}
+
+.tech-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tech-box p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+section.technologies i {
+  font-size: 10rem;
+}
+
+.spring-icon {
+  width: 13rem;
+  transform: translateY(1rem);
+}
+
+.postgreSQL-icon {
+  width: 13rem;
+  transform: translateY(1rem);
 }

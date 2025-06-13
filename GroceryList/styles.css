@@ -96,3 +96,7 @@ main ul li input {
 main ul li input[type="checkbox"]:checked {
   accent-color: rgb(191, 109, 241);
 }
+
+.checked {
+  text-decoration: line-through;
+}
